@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <script>
+        const comidas = ["Pizza", "Hamburguesa", "empanadas"];
+        localStorage.setItem("comidas", 
+        JSON.stringify(comidas));
+        let comidasGuardadas = JSON.parse(localStorage.getItem("comidas"));
+        console.log(comidasGuardadas[0]);
+       </script>
+</body>
+</html>
